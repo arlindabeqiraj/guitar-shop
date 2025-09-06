@@ -18,21 +18,18 @@ export default function Hero() {
         }}
       >
         <div className="text-center">
-          <h3
-            className="text-[48px] leading-[56px] font-extrabold tracking-tight"
-            suppressHydrationWarning
-          >
-            {t("hero.title")}{" "}
-            <span className="text-[#FF6428]" suppressHydrationWarning>
-              {t("hero.highlight")}
+          <h3 className="text-[48px] leading-[56px] font-extrabold tracking-tight">
+            {t("hero.title", "Browse top quality")}{" "}
+            <span className="text-[#FF6428]">
+              {t("hero.highlight", "Guitars")}
             </span>{" "}
-            {t("hero.suffix")}
+            {t("hero.suffix", "online")}
           </h3>
-          <p
-            className="mt-6 text-[18px] leading-[28px] text-[#666] max-w-md mx-auto"
-            suppressHydrationWarning
-          >
-            {t("hero.subtitle")}
+          <p className="mt-6 text-[18px] leading-[28px] text-[#666] max-w-md mx-auto">
+            {t(
+              "hero.subtitle",
+              "Explore 50k+ latest collections of branded guitars online with VibeStrings."
+            )}
           </p>
         </div>
       </div>

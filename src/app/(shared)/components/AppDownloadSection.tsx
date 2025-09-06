@@ -18,6 +18,7 @@ export default function AppDownloadSection() {
                 1: <span className="text-[#FF6428]" />,
                 br: <br />,
               }}
+              defaults="Browse and buy your <1>favorite guitars</1> with <br />VibeStrings."
             />
           </h2>
 

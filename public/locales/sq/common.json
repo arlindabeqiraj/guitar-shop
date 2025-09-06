@@ -1,6 +1,6 @@
 {
   "appDownload": {
-    "title": "Shfleto dhe bli <1>kitarrat e preferuara</1> me <br />VibeStrings."
+    "title": "Shfleto dhe bli <1>kitarat e preferuara</1> me <br />VibeStrings."
   },
 
   "brands": {
@@ -13,7 +13,7 @@
   },
 
   "footer": {
-    "email": "Kontakti@VibeStrings.com",
+    "email": "Enquiry@VibeStrings.com",
     "location": "San Francisko",
     "pages": {
       "title": "FAQET",
@@ -24,8 +24,8 @@
     "product": {
       "title": "PRODUKTI",
       "terms": "Kushtet",
-      "privacy": "Politika e Privatësisë",
-      "copyright": "Të Drejtat e Autorit"
+      "privacy": "Politika e privatësisë",
+      "copyright": "Të drejtat e autorit"
     },
     "follow": {
       "title": "NA NDIQNI"
@@ -73,17 +73,17 @@
 
   "advantages": {
     "smooth": {
-      "alt": "Shfletim i Lehtë",
+      "alt": "Shfletim i lehtë",
       "title": "SHFLETIM I LEHTË",
       "description": "Shijo një eksperiencë të shfletimit pa pengesa për dashamirët e kitarave."
     },
     "delivery": {
-      "alt": "Dërgesë e Lehtë",
+      "alt": "Dërgesë e lehtë",
       "title": "DËRGESË E LEHTË",
-      "description": "Dërgesë e shpejtë dhe e sigurtë direkt te dera jote."
+      "description": "Dërgesë e shpejtë dhe e sigurt direkt te dera jote."
     },
     "payments": {
-      "alt": "Pagesa të Shpejta",
+      "alt": "Pagesa të shpejta",
       "title": "PAGESA TË SHPEJTA",
       "description": "Pagesa të sigurta dhe pa telashe për kitarat e tua të preferuara."
     }

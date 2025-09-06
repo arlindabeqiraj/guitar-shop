@@ -2,13 +2,9 @@
 /** @type {import('next').NextConfig} */
 const { i18n } = require("./next-i18next.config");
 
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
   i18n,
-};
-
-const nextConfig = {
-  i18n, // ✅ shto i18n config
   images: {
     remotePatterns: [
       {
@@ -32,6 +28,16 @@ const nextConfig = {
         hostname: "**",
       },
     ],
+  },
+
+  async redirects() {
+    return [
+      {
+        source: "/", // çdo vizitë te root
+        destination: "/brands", // ridrejtohet te /brands
+        permanent: false,
+      },
+    ];
   },
 };
 

@@ -17,37 +17,43 @@ export default function Footer() {
           <Logo />
           <div className="flex items-center gap-3 text-gray-600">
             <Mail size={20} />
-            <span suppressHydrationWarning>{t("footer.email")}</span>
+            <span>{t("footer.email", "Enquiry@VibeStrings.com")}</span>
           </div>
           <div className="flex items-center gap-3 text-gray-600">
             <MapPin size={20} />
-            <span suppressHydrationWarning>{t("footer.location")}</span>
+            <span>{t("footer.location", "San Francisco")}</span>
           </div>
         </div>
 
         {/* Pages */}
         <div>
-          <h3 className="font-semibold mb-4">{t("footer.pages.title")}</h3>
+          <h3 className="font-semibold mb-4">
+            {t("footer.pages.title", "PAGES")}
+          </h3>
           <ul className="space-y-2 text-gray-600">
-            <li>{t("footer.pages.store")}</li>
-            <li>{t("footer.pages.collections")}</li>
-            <li>{t("footer.pages.support")}</li>
+            <li>{t("footer.pages.store", "Store")}</li>
+            <li>{t("footer.pages.collections", "Collections")}</li>
+            <li>{t("footer.pages.support", "Support")}</li>
           </ul>
         </div>
 
         {/* Product */}
         <div>
-          <h3 className="font-semibold mb-4">{t("footer.product.title")}</h3>
+          <h3 className="font-semibold mb-4">
+            {t("footer.product.title", "PRODUCT")}
+          </h3>
           <ul className="space-y-2 text-gray-600">
-            <li>{t("footer.product.terms")}</li>
-            <li>{t("footer.product.privacy")}</li>
-            <li>{t("footer.product.copyright")}</li>
+            <li>{t("footer.product.terms", "Terms")}</li>
+            <li>{t("footer.product.privacy", "Privacy Policy")}</li>
+            <li>{t("footer.product.copyright", "Copyright")}</li>
           </ul>
         </div>
 
         {/* Socials + Language */}
         <div>
-          <h3 className="font-semibold mb-4">{t("footer.follow.title")}</h3>
+          <h3 className="font-semibold mb-4">
+            {t("footer.follow.title", "FOLLOW US")}
+          </h3>
           <div className="flex gap-4 text-gray-600 mb-4">
             <FaFacebookF size={20} />
             <FaTwitter size={20} />
@@ -58,7 +64,7 @@ export default function Footer() {
       </div>
 
       <div className="text-center text-gray-500 mt-10">
-        © 2022 <span suppressHydrationWarning>{t("footer.copyright")}</span>
+        © 2022 {t("footer.copyright", "VibeStrings. All rights reserved.")}
       </div>
     </footer>
   );
