@@ -1,0 +1,109 @@
+{
+  "appDownload": {
+    "title": "Shfleto dhe bli <1>kitarrat e preferuara</1> me <br />VibeStrings."
+  },
+
+  "brands": {
+    "noBrands": "Asnjë brend nuk është i disponueshëm për momentin.",
+    "selection": {
+      "title": "Duke paraqitur",
+      "highlight": "Brendet më të mira",
+      "subtitle": "Zgjidh brendin e preferuar dhe eksploro koleksionin tonë të veçantë."
+    }
+  },
+
+  "footer": {
+    "email": "Kontakti@VibeStrings.com",
+    "location": "San Francisko",
+    "pages": {
+      "title": "FAQET",
+      "store": "Dyqani",
+      "collections": "Koleksionet",
+      "support": "Suporti"
+    },
+    "product": {
+      "title": "PRODUKTI",
+      "terms": "Kushtet",
+      "privacy": "Politika e Privatësisë",
+      "copyright": "Të Drejtat e Autorit"
+    },
+    "follow": {
+      "title": "NA NDIQNI"
+    },
+    "copyright": "VibeStrings. Të gjitha të drejtat e rezervuara."
+  },
+
+  "hero": {
+    "title": "Shfleto kitarat me cilësi të lartë",
+    "highlight": "Kitara",
+    "suffix": "online",
+    "subtitle": "Eksploro mbi 50 mijë koleksione të reja të kitarave të brenduara me VibeStrings."
+  },
+
+  "infoFooter": {
+    "results": "Duke shfaqur {{visibleCount}} nga {{totalCount}} rezultate"
+  },
+
+  "filters": {
+    "allTypes": "Filtro sipas llojit",
+    "acoustic": "Akustike",
+    "electric": "Elektrike",
+    "bass": "Bas",
+    "search": "Kërko sipas emrit",
+    "searchPlaceholder": "Kërko sipas emrit",
+    "filterType": "Filtro sipas tipit",
+    "types": {
+      "acoustic": "Akustike",
+      "electric": "Elektrike",
+      "bass": "Bas"
+    }
+  },
+
+  "types": {
+    "acoustic": "Akustike",
+    "electric": "Elektrike",
+    "bass": "Bas"
+  },
+
+  "price": "{{value}} €",
+
+  "whytry": {
+    "title": "Pse të provosh"
+  },
+
+  "advantages": {
+    "smooth": {
+      "alt": "Shfletim i Lehtë",
+      "title": "SHFLETIM I LEHTË",
+      "description": "Shijo një eksperiencë të shfletimit pa pengesa për dashamirët e kitarave."
+    },
+    "delivery": {
+      "alt": "Dërgesë e Lehtë",
+      "title": "DËRGESË E LEHTË",
+      "description": "Dërgesë e shpejtë dhe e sigurtë direkt te dera jote."
+    },
+    "payments": {
+      "alt": "Pagesa të Shpejta",
+      "title": "PAGESA TË SHPEJTA",
+      "description": "Pagesa të sigurta dhe pa telashe për kitarat e tua të preferuara."
+    }
+  },
+
+  "loading": {
+    "model": "Duke ngarkuar modelin...",
+    "models": "Duke ngarkuar modelet..."
+  },
+
+  "error": {
+    "general": "Gabim: {{error}}",
+    "notfound": {
+      "brand": "Brendi nuk u gjet.",
+      "model": "Modeli nuk u gjet."
+    }
+  },
+
+  "tabs": {
+    "specs": "Specifikimet",
+    "musicians": "Kush e përdor?"
+  }
+}

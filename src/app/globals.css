@@ -24,3 +24,31 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.logo {
+  filter: grayscale(100%) brightness(70%) contrast(100%);
+}
+
+/* Opsionet default */
+select option {
+  color: #6b7280; /* gri */
+  background-color: white;
+}
+
+/* Opsioni i zgjedhur */
+select option:checked {
+  color: #ff6428; /* portokalli */
+  font-weight: 600;
+  background-color: #fff5f0; /* portokalli i lehtë si sfond */
+}
+
+/* Hover mbi opsion */
+select option:hover {
+  background-color: #ffe2d3; /* portokalli pak më i theksuar në hover */
+  color: #ff6428;
+}
+
+html,
+body {
+  background-color: 000; /* ose #000 ose transparent */
+}

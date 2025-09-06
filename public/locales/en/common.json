@@ -1,0 +1,109 @@
+{
+  "appDownload": {
+    "title": "Browse and buy your <1>favorite guitars</1> with <br />VibeStrings."
+  },
+
+  "brands": {
+    "noBrands": "No brands available at the moment.",
+    "selection": {
+      "title": "Featuring the",
+      "highlight": "Best Brands",
+      "subtitle": "Select your preferred brand and explore our exquisite collection."
+    }
+  },
+
+  "footer": {
+    "email": "Enquiry@VibeStrings.com",
+    "location": "San Francisco",
+    "pages": {
+      "title": "PAGES",
+      "store": "Store",
+      "collections": "Collections",
+      "support": "Support"
+    },
+    "product": {
+      "title": "PRODUCT",
+      "terms": "Terms",
+      "privacy": "Privacy Policy",
+      "copyright": "Copyright"
+    },
+    "follow": {
+      "title": "FOLLOW US"
+    },
+    "copyright": "VibeStrings. All rights reserved."
+  },
+
+  "hero": {
+    "title": "Browse top quality",
+    "highlight": "Guitars",
+    "suffix": "online",
+    "subtitle": "Explore 50k+ latest collections of branded guitars online with VibeStrings."
+  },
+
+  "infoFooter": {
+    "results": "Showing {{visibleCount}} of {{totalCount}} results"
+  },
+
+  "filters": {
+    "allTypes": "Filter by type",
+    "acoustic": "Acoustic",
+    "electric": "Electric",
+    "bass": "Bass",
+    "search": "Search by name",
+    "searchPlaceholder": "Search by name",
+    "filterType": "Filter by type",
+    "types": {
+      "acoustic": "Acoustic",
+      "electric": "Electric",
+      "bass": "Bass"
+    }
+  },
+
+  "types": {
+    "acoustic": "Acoustic",
+    "electric": "Electric",
+    "bass": "Bass"
+  },
+
+  "price": "${{value}}",
+
+  "whytry": {
+    "title": "Why try"
+  },
+
+  "advantages": {
+    "smooth": {
+      "alt": "Smooth Browsing",
+      "title": "SMOOTH BROWSING",
+      "description": "Enjoy a seamless browsing experience tailored for guitar lovers."
+    },
+    "delivery": {
+      "alt": "Easy Delivery",
+      "title": "EASY DELIVERY",
+      "description": "Fast and reliable delivery straight to your door."
+    },
+    "payments": {
+      "alt": "Swift Payments",
+      "title": "SWIFT PAYMENTS",
+      "description": "Secure and hassle-free payments for your favorite guitars."
+    }
+  },
+
+  "loading": {
+    "model": "Loading model...",
+    "models": "Loading models..."
+  },
+
+  "error": {
+    "general": "Error: {{error}}",
+    "notfound": {
+      "brand": "Brand not found.",
+      "model": "Model not found."
+    }
+  },
+
+  "tabs": {
+    "specs": "Specification",
+    "musicians": "Who plays it?"
+  }
+}
