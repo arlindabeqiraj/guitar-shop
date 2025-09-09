@@ -15,7 +15,7 @@ type Model = {
 type ModelsGridProps = {
   models: Model[];
   brandId: string;
-  onImageError: (id: string) => void;
+  onImageError?: (id: string) => void;
 };
 
 export default function ModelsGrid({
@@ -39,7 +39,7 @@ export default function ModelsGrid({
             width={300}
             height={200}
             className="object-contain mx-auto"
-            onError={() => onImageError(model.id)}
+            onError={() => onImageError?.(model.id)}
           />
           <h3 className="text-lg font-semibold mt-4">{model.name}</h3>
           <p className="text-sm text-gray-500">

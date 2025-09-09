@@ -15,7 +15,7 @@ export default function ModelMusicians({
 }: {
   musicians: Musician[];
   page: number;
-  setPage: (page: number) => void;
+  setPage?: (page: number) => void;
 }) {
   const musiciansPerPage = 2;
   const totalPages = Math.ceil(musicians.length / musiciansPerPage);
@@ -60,7 +60,7 @@ export default function ModelMusicians({
               {Array.from({ length: totalPages }).map((_, idx) => (
                 <button
                   key={idx}
-                  onClick={() => setPage(idx)}
+                  onClick={() => setPage?.(idx)}
                   className={`w-3 h-3 rounded-full transition ${
                     page === idx ? "bg-[#FF6428]" : "bg-gray-300"
                   }`}

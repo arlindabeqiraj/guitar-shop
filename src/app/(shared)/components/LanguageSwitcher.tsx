@@ -1,9 +1,9 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import i18n from "../../../../i18n"; // root i projektit
+import i18n from "../../../../i18n";
 import Cookies from "js-cookie";
-import { languages, Language } from "../../../../i18n/settings";
+import { Language } from "../../../../i18n/settings";
 
 export default function LanguageSwitcher() {
   const { i18n: i18nextInstance } = useTranslation();

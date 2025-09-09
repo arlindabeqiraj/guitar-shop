@@ -2,9 +2,21 @@
 
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const { t } = useTranslation("common");
+  const { t, i18n } = useTranslation("common");
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    if (i18n.isInitialized) {
+      setReady(true);
+    }
+  }, [i18n.isInitialized]);
+
+  if (!ready) {
+    return null;
+  }
 
   return (
     <section className="relative w-full overflow-hidden min-h-[720px]">
@@ -18,20 +30,12 @@ export default function Hero() {
         }}
       >
         <div className="text-center">
-          <h3
-            className="text-[48px] leading-[56px] font-extrabold tracking-tight"
-            suppressHydrationWarning
-          >
+          <h3 className="text-[48px] leading-[56px] font-extrabold tracking-tight">
             {t("hero.title")}{" "}
-            <span className="text-[#FF6428]" suppressHydrationWarning>
-              {t("hero.highlight")}
-            </span>{" "}
+            <span className="text-[#FF6428]">{t("hero.highlight")}</span>{" "}
             {t("hero.suffix")}
           </h3>
-          <p
-            className="mt-6 text-[18px] leading-[28px] text-[#666] max-w-md mx-auto"
-            suppressHydrationWarning
-          >
+          <p className="mt-6 text-[18px] leading-[28px] text-[#666] max-w-md mx-auto">
             {t("hero.subtitle")}
           </p>
         </div>
@@ -41,7 +45,7 @@ export default function Hero() {
         <div className="relative h-full w-full rounded-bl-[200px] overflow-hidden">
           <Image
             src="/images/guitar.png"
-            alt="Guitar"
+            alt="Electric guitar illustration"
             fill
             priority
             className="object-cover"

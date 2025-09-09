@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 type WhyTryCardProps = {
@@ -15,6 +16,22 @@ export default function WhyTryCard({
   title,
   description,
 }: WhyTryCardProps) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <div className="flex flex-col items-center text-center">
+        <div className="w-16 h-16 bg-[#222] rounded-xl flex items-center justify-center mb-4" />
+        <h3 className="text-lg font-normal">&nbsp;</h3>
+        <p className="text-sm text-gray-400 mt-2 max-w-[220px]">&nbsp;</p>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col items-center text-center">
       <div className="w-16 h-16 bg-[#222] rounded-xl flex items-center justify-center mb-4">

@@ -1,24 +1,31 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Trans, useTranslation } from "next-i18next";
+import { Trans } from "next-i18next";
 
 export default function AppDownloadSection() {
-  const { t } = useTranslation("common");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <section className="w-full bg-white py-42">
       <div className="max-w-[1280px] mx-auto px-[120px] flex flex-col md:flex-row items-center justify-between gap-16">
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-[36px] leading-[44px] font-normal text-center">
-            <Trans
-              i18nKey="appDownload.title"
-              ns="common"
-              components={{
-                1: <span className="text-[#FF6428]" />,
-                br: <br />,
-              }}
-            />
+            {mounted && (
+              <Trans
+                i18nKey="appDownload.title"
+                ns="common"
+                components={{
+                  1: <span className="text-[#FF6428]" />,
+                  br: <br />,
+                }}
+              />
+            )}
           </h2>
 
           <div className="flex items-center justify-center md:justify-start gap-4 mt-8">

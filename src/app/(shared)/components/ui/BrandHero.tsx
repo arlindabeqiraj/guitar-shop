@@ -12,7 +12,6 @@ export default function BrandHero({ brandName, brandImage }: BrandHeroProps) {
   return (
     <section className="relative flex flex-col md:flex-row items-center justify-between px-10 py-16  mb-[120px]">
       <div className="max-w-xl text-center">
-        {/* Back to brands */}
         <Link
           href="/brands"
           className="text-sm text-gray-500 hover:underline absolute top-20 left-6 z-12"
@@ -33,7 +32,6 @@ export default function BrandHero({ brandName, brandImage }: BrandHeroProps) {
         </p>
       </div>
 
-      {/* Background me logon e brandit */}
       <div className="absolute top-0 right-0 h-[430px] w-[630px]">
         <div className="relative h-full w-full rounded-bl-[200px] overflow-hidden">
           <Image

@@ -16,10 +16,10 @@ i18n
     defaultNS,
     ns: [defaultNS],
     backend: {
-      loadPath: "/locales/{{lng}}/{{ns}}.json", // nga public/locales/en/common.json
+      loadPath: "/locales/{{lng}}/{{ns}}.json",
     },
     interpolation: {
-      escapeValue: false, // React e bën vetë
+      escapeValue: false,
     },
   });
 

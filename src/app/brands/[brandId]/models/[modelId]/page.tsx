@@ -80,14 +80,28 @@ export default function ModelDetailsPage({
   const [activeTab, setActiveTab] = useState<"specs" | "musicians">("specs");
   const [page, setPage] = useState(0);
 
-  if (loading) return <LoadingMessage message={t("loading.model")} />;
+  if (loading)
+    return (
+      <LoadingMessage i18nKey="loading.model" fallback={t("loading.model")} />
+    );
+
   if (error)
     return (
-      <ErrorMessage message={t("error.general", { error: error.message })} />
+      <ErrorMessage
+        i18nKey="error.general"
+        values={{ error: error.message }}
+        fallback={t("error.general", { error: error.message })}
+      />
     );
 
   const model = data?.findUniqueModel;
-  if (!model) return <ErrorMessage message={t("error.notfound.model")} />;
+  if (!model)
+    return (
+      <ErrorMessage
+        i18nKey="error.notfound.model"
+        fallback={t("error.notfound.model")}
+      />
+    );
 
   return (
     <main className="pb-40">

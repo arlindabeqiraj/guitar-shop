@@ -47,7 +47,7 @@ export default function BrandModelsPage({
   params: Promise<{ brandId: string }>;
 }) {
   const { brandId } = use(params);
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
 
   const { data, loading, error } = useQuery<{
     findUniqueBrand: Brand;
@@ -61,7 +61,7 @@ export default function BrandModelsPage({
 
   if (loading)
     return (
-      <LoadingMessage i18nKey="loading.models" fallback="Loading models..." />
+      <LoadingMessage i18nKey="loading.models" fallback={t("loading.models")} />
     );
 
   if (error)
@@ -69,7 +69,7 @@ export default function BrandModelsPage({
       <ErrorMessage
         i18nKey="error.general"
         values={{ error: error.message }}
-        fallback="An error occurred"
+        fallback={t("error.general")}
       />
     );
 
@@ -80,7 +80,7 @@ export default function BrandModelsPage({
     return (
       <ErrorMessage
         i18nKey="error.notfound.brand"
-        fallback="Brand not found."
+        fallback={t("error.notfound.brand")}
       />
     );
 

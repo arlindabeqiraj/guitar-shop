@@ -1,10 +1,26 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useTranslation } from "next-i18next";
 import WhyTryCard from "../../(shared)/components/ui/WhyTryCard";
 
 export default function WhyTrySection() {
   const { t } = useTranslation("common");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <section className="w-full bg-[#111] text-white py-20">
+        <div className="max-w-[1280px] mx-auto px-[120px] text-center">
+          <h2 className="text-[36px] font-normal">&nbsp;</h2>
+        </div>
+      </section>
+    );
+  }
 
   const advantages = [
     {

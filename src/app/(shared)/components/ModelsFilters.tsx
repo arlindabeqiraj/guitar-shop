@@ -6,8 +6,8 @@ import { useTranslation } from "next-i18next";
 type ModelsFiltersProps = {
   search: string;
   filterType: string;
-  onSearchChange: (value: string) => void;
-  onFilterChange: (value: string) => void;
+  onSearchChange?: (value: string) => void;
+  onFilterChange?: (value: string) => void;
 };
 
 export default function ModelsFilters({
@@ -24,7 +24,7 @@ export default function ModelsFilters({
         <Filter className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
         <select
           value={filterType}
-          onChange={(e) => onFilterChange(e.target.value)}
+          onChange={(e) => onFilterChange?.(e.target.value)}
           className={`pl-10 pr-8 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 appearance-none
             ${filterType ? "text-[#FF6428]" : "text-gray-500"}`}
         >
@@ -44,7 +44,7 @@ export default function ModelsFilters({
           type="text"
           placeholder={t("filters.searchPlaceholder")}
           value={search}
-          onChange={(e) => onSearchChange(e.target.value)}
+          onChange={(e) => onSearchChange?.(e.target.value)}
           className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg w-64 text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FF6428]"
         />
       </div>

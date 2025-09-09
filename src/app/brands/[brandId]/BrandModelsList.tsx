@@ -65,8 +65,19 @@ export default function BrandModelsList({
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  if (loading) return <LoadingMessage message={t("loading.models")} />;
-  if (error) return <ErrorMessage message={t("error.general", { error })} />;
+  if (loading)
+    return (
+      <LoadingMessage i18nKey="loading.models" fallback={t("loading.models")} />
+    );
+
+  if (error)
+    return (
+      <ErrorMessage
+        i18nKey="error.general"
+        values={{ error }}
+        fallback={t("error.general", { error })}
+      />
+    );
 
   return (
     <main className="px-10 py-16 mt-10">
