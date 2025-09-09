@@ -14,4 +14,4 @@
    npm run dev
 
 4. Open the app in your browser:
-   http://localhost:3000
+   http://localhost:3000/brands
